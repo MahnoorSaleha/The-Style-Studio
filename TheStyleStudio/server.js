@@ -33,7 +33,7 @@ server.use(adminProductsRouter);
 let adminCategoriesProducts = require("./routes/admin/categories.controller");
 server.use(adminCategoriesProducts);
 
-const connectionString = "mongodb://localhost:27017/Database";
+const connectionString = "mongodb+srv://TheStyleStudio:admin123@cluster0.cjg8g.mongodb.net/";
 mongoose
   .connect(connectionString)
   .then(() => console.log("Connected to Mongo DB Server: " + connectionString))

@@ -57,6 +57,9 @@ server.use(adminProductsRouter);
 let adminCategoriesProducts = require("./routes/admin/categories.controller");
 server.use(adminCategoriesProducts);
 
+const clothesRoute = require('./routes/user/user.products.controller');
+server.use(clothesRoute)
+
 const connectionString = "mongodb+srv://TheStyleStudio:admin123@cluster0.cjg8g.mongodb.net/";
 mongoose
   .connect(connectionString)
